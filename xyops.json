@@ -1,0 +1,15 @@
+{
+	"type": "xypdf",
+	"description": "xyOps Portable Data Object",
+	"version": "1.0",
+	"xyops": "1.1.3",
+	"items": [
+		{
+			"type": "extension",
+			"data": {
+				"id": "pixlcore/xyext-selfhst-icons",
+				"version": "v1.0.0"
+			}
+		}
+	]
+}
