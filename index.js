@@ -38,7 +38,7 @@ module.exports = {
 			this.icons[icon_id] = info.default;
 		} );
 		
-		this.logDebug(5, "selfhst-icon pack starting up", { version: pkg.version, icon_pkg_path, icons: Tools.numKeys(this.icons) });
+		this.logDebug(5, "selfhst-icon pack starting up", { version: pkg.version, icons: Tools.numKeys(this.icons) });
 		
 		// add icon names to client payload
 		this.client.iconNames = Object.keys(this.icons);
@@ -95,6 +95,7 @@ module.exports = {
 		iconNames: [],
 		
 		init: function() {
+			// this code runs client-side
 			Debug.trace('ext', "Injecting selfhst-icons: " + this.iconNames.length + " icons");
 			
 			var lines = [`.mdi[class*="mdi-selfhst-"]:before { content: ""; width: 1em; height: 1em; vertical-align: -0.175em; background-color: currentColor; }`];
