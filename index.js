@@ -4,7 +4,6 @@
 
 const fs = require('fs');
 const Path = require('path');
-const Tools = require('pixl-tools');
 const pkg = require('./package.json');
 
 module.exports = {
@@ -38,7 +37,7 @@ module.exports = {
 			this.icons[icon_id] = info.default;
 		} );
 		
-		this.logDebug(5, "selfhst-icon pack starting up", { version: pkg.version, icons: Tools.numKeys(this.icons) });
+		this.logDebug(5, "selfhst-icon pack starting up", { version: pkg.version, icons: Object.keys(this.icons).length });
 		
 		// add icon names to client payload
 		this.client.iconNames = Object.keys(this.icons);
