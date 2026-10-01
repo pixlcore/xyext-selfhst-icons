@@ -110,6 +110,9 @@ module.exports = {
 			// add our icons to the master list and re-sort
 			iconFontNames = iconFontNames.concat( this.iconNames.map( name => 'selfhst-' + name ) );
 			iconFontNames.sort();
+			
+			// add copyright to footer (CC requirement)
+			$('#d_footer_copyright').append( '<span style="padding-left:15px;">' + inline_marked(`Icons by [selfh.st](https://selfh.st/icons/) ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))`) + '</span>' );
 		}
 	}
 
