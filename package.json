@@ -1,8 +1,8 @@
 {
 	"name": "@pixlcore/xyext-selfhst-icons",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Adds the selfh.st icon pack into the xyOps workflow automation system.",
-	"author": "Joseph Huckaby <jhuckaby@pixlcore.com>",
+	"author": "PixlCore <support@pixlcore.com>",
 	"homepage": "https://github.com/pixlcore/xyext-selfhst-icons",
 	"license": "MIT",
 	"main": "index.js",
@@ -19,7 +19,7 @@
 		"selfhst"
 	],
 	"dependencies": {
-		"@iconify-icons/selfhst": "^2.0.6"
+		"@iconify-icons/selfhst": "^2.0.11"
 	},
 	"publishConfig": {
 		"access": "public"
